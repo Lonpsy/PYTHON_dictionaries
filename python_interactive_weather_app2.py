@@ -20,12 +20,12 @@ def forcast_weather(my_city):
         formated_day = formated_date.strftime('%A')
         temperature = round(day['temperature']['day'])
         print(f' {formated_day}: {temperature}°C')
-
     
 my_city=input("please enter a city ")
 my_city.strip()
 if my_city:
     current_city_weather(my_city)
+    print('\n')
     forcast_weather(my_city)
     
 else:
